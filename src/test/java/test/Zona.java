@@ -21,10 +21,10 @@ public class Zona {
     public Animal[] getAnimales(){return animales;}
 
     public void agregarAnimales(Animal animal){
-        for (Animal i:animales){
-            if (i == null){
-                i=animal;
-                i.setZona(this);
+        for (int i = 0; i < animales.length; i++){
+            if (animales[i] == null){
+                animales[i]=animal;
+                animales[i].setZona(this);
                 break;
             }
         }
@@ -32,7 +32,7 @@ public class Zona {
     public int cantidadAnimales(){
         int c = 0;
         for (Animal i: animales){
-            if (i!= null){
+            if (i != null){
                 c += 1;
             }
         }
