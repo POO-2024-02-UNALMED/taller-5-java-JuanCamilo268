@@ -15,18 +15,18 @@ public class Mamifero extends Animal {
         this.genero = genero;
         this.pelaje = pelaje;
         this.patas = patas;
-        for (Mamifero m: listado){
-            if (m == null){
-                m = this;
+        for (int i = 0; i < listado.length; i++){
+            if (listado[i] == null){
+                listado[i] = this;
                 break;
             }
         }
         totalAnimales += 1;
     }
     public Mamifero(){totalAnimales += 1;
-        for (Mamifero m: listado){
-            if (m == null){
-                m = this;
+        for (int i = 0; i < listado.length; i++){
+            if (listado[i] == null){
+                listado[i] = this;
                 break;
             }
         }
