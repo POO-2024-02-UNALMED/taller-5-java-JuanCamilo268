@@ -37,7 +37,7 @@ public class Reptil extends Animal {
     public String getColorEscamas(){return this.colorEscamas;}
     public int getLargoCola(){return this.largoCola;}
 
-    public static int getCantidad(){
+    public static int cantidadReptiles(){
         int c = 0;
         for (Animal i: listado){
             if (i != null){
