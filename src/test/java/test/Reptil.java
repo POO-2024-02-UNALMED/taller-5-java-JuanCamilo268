@@ -16,7 +16,7 @@ public class Reptil extends Animal {
         this.largoCola = largo;
         totalAnimales += 1;
         for (Reptil m: listado){
-            if (m!=null){
+            if (m == null){
                 m = this;
                 break;
             }
@@ -24,7 +24,7 @@ public class Reptil extends Animal {
     }
     public Reptil(){totalAnimales += 1;
         for (Reptil m: listado){
-            if (m!=null){
+            if (m == null){
                 m = this;
                 break;
             }
