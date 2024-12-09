@@ -34,7 +34,7 @@ public class Animal {
                 "Aves: " + Ave.getCantidad() + "\n" +
                 "Reptiles: " + Reptil.getCantidad() + "\n" +
                 "Peces: " + Pez.getCantidad() + "\n" +
-                "Anfibios: " + Anfibio.getCantidad();
+                "Anfibios: " + Anfibio.cantidadAnfibios();
     }
 
     @Override
