@@ -13,17 +13,17 @@ public class Ave extends Animal {
         this.genero = genero;
         this.colorPlumas = color;
         totalAnimales += 1;
-        for (Ave m: listado){
-            if (m == null){
-                m = this;
+        for (int i = 0; i < listado.length; i++){
+            if (listado[i] == null){
+                listado[i] = this;
                 break;
             }
         }
     }
     public Ave(){totalAnimales += 1;
-        for (Ave m: listado){
-            if (m == null){
-                m = this;
+        for (int i = 0; i < listado.length; i++){
+            if (listado[i] == null){
+                listado[i] = this;
                 break;
             }
         }
