@@ -38,7 +38,7 @@ public class Anfibio extends Animal {
     public String getColorPiel(){return this.colorPiel;}
     public boolean isVenenoso(){return this.venenoso;}
 
-    public static int getCantidad(){
+    public static int cantidadAnfibios(){
         int c = 0;
         for (Animal i: listado){
             if (i != null){
