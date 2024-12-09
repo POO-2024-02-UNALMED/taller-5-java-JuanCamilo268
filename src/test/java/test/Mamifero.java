@@ -16,7 +16,7 @@ public class Mamifero extends Animal {
         this.pelaje = pelaje;
         this.patas = patas;
         for (Mamifero m: listado){
-            if (m!=null){
+            if (m == null){
                 m = this;
                 break;
             }
@@ -25,7 +25,7 @@ public class Mamifero extends Animal {
     }
     public Mamifero(){totalAnimales += 1;
         for (Mamifero m: listado){
-            if (m!=null){
+            if (m == null){
                 m = this;
                 break;
             }
