@@ -16,7 +16,7 @@ public class Pez extends Animal {
         this.cantidadAletas = aletas;
         totalAnimales += 1;
         for (Pez m: listado){
-            if (m!=null){
+            if (m == null){
                 m = this;
                 break;
             }
@@ -24,7 +24,7 @@ public class Pez extends Animal {
     }
     public Pez(){totalAnimales += 1;
         for (Pez m: listado){
-            if (m!=null){
+            if (m == null){
                 m = this;
                 break;
             }
