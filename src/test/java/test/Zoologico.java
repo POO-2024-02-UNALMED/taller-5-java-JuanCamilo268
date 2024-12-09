@@ -12,10 +12,11 @@ public class Zoologico {
     public void setNombre(String nombre){this.nombre = nombre;}
     public void setUbicacion(String ubicacion){this.ubicacion = ubicacion;}
     public void agregarZonas(Zona zona){
-        for (Zona i:zonas){
-            if (i == null){
-                i = zona;
+        for (int i = 0; i < zonas.length; i++){
+            if (zonas[i] == null){
+                zonas[i] = zona;
                 zona.setZoo(this);
+                break;
             }
         }
     }
