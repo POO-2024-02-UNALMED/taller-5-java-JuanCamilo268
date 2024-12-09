@@ -37,7 +37,7 @@ public class Pez extends Animal {
     public String getColorEscamas(){return this.colorEscamas;}
     public int getCantidadAletas(){return this.cantidadAletas;}
 
-    public static int getCantidad(){
+    public static int cantidadPeces(){
         int c = 0;
         for (Animal i: listado){
             if (i != null){
