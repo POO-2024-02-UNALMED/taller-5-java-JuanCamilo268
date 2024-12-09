@@ -16,7 +16,7 @@ public class Anfibio extends Animal {
         this.venenoso = veneno;
         totalAnimales += 1;
         for (Anfibio m: listado){
-            if (m!=null){
+            if (m = null){
                 m = this;
                 break;
             }
@@ -24,7 +24,7 @@ public class Anfibio extends Animal {
     }
     public Anfibio(){totalAnimales += 1;
         for (Anfibio m: listado){
-            if (m!=null){
+            if (m == null){
                 m = this;
                 break;
             }
