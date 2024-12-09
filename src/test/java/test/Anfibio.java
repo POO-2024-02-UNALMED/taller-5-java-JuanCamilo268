@@ -15,17 +15,17 @@ public class Anfibio extends Animal {
         this.colorPiel = color;
         this.venenoso = veneno;
         totalAnimales += 1;
-        for (Anfibio m: listado){
-            if (m == null){
-                m = this;
+        for (int i = 0; i < listado.length; i++){
+            if (listado[i] == null){
+                listado[i] = this;
                 break;
             }
         }
     }
     public Anfibio(){totalAnimales += 1;
-        for (Anfibio m: listado){
-            if (m == null){
-                m = this;
+        for (int i = 0; i < listado.length; i++){
+            if (listado[i] == null){
+                listado[i] = this;
                 break;
             }
         }
