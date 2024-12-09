@@ -33,7 +33,7 @@ public class Ave extends Animal {
 
     public String getColorPlumas(){return this.colorPlumas;}
 
-    public static int getCantidad(){
+    public static int cantidadAves(){
         int c = 0;
         for (Animal i: listado){
             if (i != null){
