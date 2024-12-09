@@ -30,4 +30,34 @@ public class Anfibio extends Animal {
             }
         }
     }
+
+    public void setColorPiel(String color){this.colorPiel = color;}
+    public void setVenenoso(boolean veneno){this.venenoso = veneno;}
+
+
+    public String getColorPiel(){return this.colorPiel;}
+    public boolean isVenenoso(){return this.venenoso;}
+
+    public static int getCantidad(){
+        int c = 0;
+        for (Animal i: listado){
+            if (i != null){
+                c += 1;
+            }
+        }
+        return c;
+    }
+
+    public String movimiento(){return "saltar";}
+
+    public static Anfibio crearRana(String nombre, int edad, String genero) {
+        Anfibio bryan = new Anfibio(nombre, edad, "selva", genero, "rojo", true);
+        ranas += 1;
+        return bryan;
+    }
+    public static Anfibio crearSalamandra(String nombre, int edad, String genero) {
+        Anfibio chorizard = new Anfibio(nombre, edad, "selva", genero, "negro y amarillo", false);
+        salamandras += 1;
+        return chorizard;
+    }
 }
