@@ -15,17 +15,17 @@ public class Reptil extends Animal {
         this.colorEscamas = color;
         this.largoCola = largo;
         totalAnimales += 1;
-        for (Reptil m: listado){
-            if (m == null){
-                m = this;
+        for (int i = 0; i < listado.length; i++){
+            if (listado[i] == null){
+                listado[i] = this;
                 break;
             }
         }
     }
     public Reptil(){totalAnimales += 1;
-        for (Reptil m: listado){
-            if (m == null){
-                m = this;
+        for (int i = 0; i < listado.length; i++){
+            if (listado[i] == null){
+                listado[i] = this;
                 break;
             }
         }
