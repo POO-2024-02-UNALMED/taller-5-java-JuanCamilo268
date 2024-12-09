@@ -14,7 +14,7 @@ public class Ave extends Animal {
         this.colorPlumas = color;
         totalAnimales += 1;
         for (Ave m: listado){
-            if (m!=null){
+            if (m == null){
                 m = this;
                 break;
             }
@@ -22,7 +22,7 @@ public class Ave extends Animal {
     }
     public Ave(){totalAnimales += 1;
         for (Ave m: listado){
-            if (m!=null){
+            if (m == null){
                 m = this;
                 break;
             }
