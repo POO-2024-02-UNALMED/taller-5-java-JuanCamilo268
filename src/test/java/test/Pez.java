@@ -15,17 +15,17 @@ public class Pez extends Animal {
         this.colorEscamas = color;
         this.cantidadAletas = aletas;
         totalAnimales += 1;
-        for (Pez m: listado){
-            if (m == null){
-                m = this;
+        for (int i = 0; i < listado.length; i++){
+            if (listado[i] == null){
+                listado[i] = this;
                 break;
             }
         }
     }
     public Pez(){totalAnimales += 1;
-        for (Pez m: listado){
-            if (m == null){
-                m = this;
+        for (int i = 0; i < listado.length; i++){
+            if (listado[i] == null){
+                listado[i] = this;
                 break;
             }
         }
