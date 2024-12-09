@@ -39,8 +39,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero + ", \n" +
-                "la zona en la que me ubico es " + zona + ", en el " + zona.getZoo();
+        return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat + " y mi genero es " + genero + "la zona en la que me ubico es " + zona + ", en el " + zona.getZoo();
     }
     public String movimiento(){return "desplazarse";}
 }
